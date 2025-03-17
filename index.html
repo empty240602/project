@@ -1,211 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="header-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="row-left">
-                            <div class="header__top__left">
-                                <p>
-                                    Free shipping, 30-day return or refund
-                                    guarantee.
-                                </p>
-                            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="row-left">
+                        <div class="header__top__left">
+                            <p>
+                                Free shipping, 30-day return or refund
+                                guarantee.
+                            </p>
                         </div>
-                        <div class="row-right">
-                            <div class="header__top__right">
-                                <div class="header-top__links">
-                                    <a href="#">SIGN IN</a>
-                                    <a href="#">FAQS</a>
-                                </div>
-                                <div class="header-top__hover">
-                                    <span>USD</span>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-6"
-                                        style="width: 15px"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                                        />
-                                    </svg>
-                                </div>
+                    </div>
+                    <div class="row-right">
+                        <div class="header__top__right">
+                            <div class="header-top__links">
+                                <a href="#">SIGN IN</a>
+                                <a href="#">FAQS</a>
+                            </div>
+                            <div class="header-top__hover">
+                                <span>USD</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 15px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <nav class="navigation">
-                <div class="container">
-                    <div class="row">
-                        <div class="nav-logo">
-                            <a href="./index.html">
-                                <img src="./assets/img/logo.png" alt="" />
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="nav-logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">Shop</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="nav-engines">
+                        <div class="nav-options">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 20px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 20px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6" style="width: 20px">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
                             </a>
                         </div>
-                        <ul class="nav-list">
-                            <li class="nav-list__item">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#">Shop</a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#">Pages</a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#">Blog</a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#">Contacts</a>
-                            </li>
-                        </ul>
-                        <div class="nav-engines">
-                            <div class="nav-options">
-                                <a href="#">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-6"
-                                        style="width: 20px"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                                        />
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-6"
-                                        style="width: 20px"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-                                        />
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-6"
-                                        style="width: 20px"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-                                        />
-                                    </svg>
-                                </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="hero-left">
+                        <div class="hero-text">
+                            <h6>SUMMER COLLECTION</h6>
+                            <h2>
+                                Fall - Winter <br />
+                                Collections 2030
+                            </h2>
+                            <p>
+                                A specialist label creating luxury
+                                essentials. Ethically crafted <br />
+                                with an unwavering commitment to exceptional
+                                quality.
+                            </p>
+                            <a href="#" class="primary-btn">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-row">
+                    <!-- banner 1 -->
+                    <div class="banner-item">
+                        <div class="banner-content">
+                            <div class="banner-heading">
+                                <h2>20% Off On Tank Tops</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</p>
+                            </div>
+                            <a href="#" class="btn">SHOP NOW</a>
+                        </div>
+                    </div>
+
+                    <!-- banner 2 -->
+                    <div class="banner-item">
+                        <div class="banner-content">
+                            <div class="banner-heading">
+                                <h2>20% Off On Tank Tops</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</p>
+                            </div>
+                            <a href="#" class="btn">SHOP NOW</a>
+                        </div>
+                    </div>
+
+                    <!-- banner 3 -->
+                    <div class="banner-item">
+                        <div class="banner-content">
+                            <div class="banner-heading">
+                                <h2>20% Off On Tank Tops</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</p>
+                            </div>
+                            <a href="#" class="btn">SHOP NOW</a>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- product -->
+        <section class="product-section">
+            <div class="container">
+                <div class="row">
+                    <div class="product-heading">
+                        <p>Summer Collection</p>
+                        <h2>Popular T-Shirts</h2>
+                    </div>
+                    <div class="product-list">
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 4 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 5 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 6 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 7 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 8 -->
+                        <div class="product">
+                            <img src="./assets/img/products/product-1.jpg" alt="product-1">
+                            <div class="product-info">
+                                <span>Men</span>
+                                <h3>T-Shirt name 10</h3>
+                                <p>$33.00 – $36.00</p>
+                                <div class="product-color-size">
+                                    <div class="color">
+                                        <div class="color-box black"></div>
+                                        <div class="color-box pink"></div>
+                                        <div class="color-box white"></div>
+                                    </div>
+                                    <select name="product-size" id="product-size" class="product-size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                        <option value="xxl">XXL</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <main style="height: 3000px">
-            <section class="hero">
-                <div class="container">
-                    <div class="row">
-                        <div class="hero-left">
-                            <div class="hero-text">
-                                <h6>SUMMER COLLECTION</h6>
-                                <h2>
-                                    Fall - Winter <br />
-                                    Collections 2030
-                                </h2>
-                                <p>
-                                    A specialist label creating luxury
-                                    essentials. Ethically crafted <br />
-                                    with an unwavering commitment to exceptional
-                                    quality.
-                                </p>
-                                <a href="#" class="primary-btn">SHOP NOW</a>
-                            </div>
+        </section>
+
+        <!-- testimonials -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="testimonials-heading">
+                    <h2>What Our Customers Say</h2>
+                </div>
+                <div class="testimonials-list">
+                    <div class="testimonials-item">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+
+                        </div>
+                        <p>Fast shipping and excellent customer service. The product was even better than expected.
+                            I will definitely be a returning customer.</p>
+                        <div class="profile">
+                            <img src="./assets/img/avatar/avatar-1.jpeg" alt="Jennifer Lewis">
+                            <span>JENNIFER LEWIS</span>
+                        </div>
+                    </div>
+
+                    <!-- testimonials 2 -->
+                    <div class="testimonials-item">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+
+                        </div>
+                        <p>Fast shipping and excellent customer service. The product was even better than expected.
+                            I will definitely be a returning customer.</p>
+                        <div class="profile">
+                            <img src="./assets/img/avatar/avatar-1.jpeg" alt="Jennifer Lewis">
+                            <span>JENNIFER LEWIS</span>
+                        </div>
+                    </div>
+
+                    <!-- testimonials 3 -->
+                    <div class="testimonials-item">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+
+                        </div>
+                        <p>Fast shipping and excellent customer service. The product was even better than expected.
+                            I will definitely be a returning customer.</p>
+                        <div class="profile">
+                            <img src="./assets/img/avatar/avatar-1.jpeg" alt="Jennifer Lewis">
+                            <span>JENNIFER LEWIS</span>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- banner -->
-             <section class="banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="banner-clothing">
-                            <div class="banner-title">
-                                <h2 class="banner-heading">Clothing <br> Collections 2030</h2>
-                                <a href="#" class="banner-link">SHOP NOW</a>
-                            </div>
-                            <div class="banner-img">
-                                <img src="./assets/img/banner/banner-1.jpg" alt="clothing">
-                            </div>
-                        </div>
+            </div>
+        </section>
 
-                        <!-- banner 2 -->
-                        <div class="banner-assessories">
-                            <div class="banner-assessories__title">
-                                <h2 class="banner-assessories__heading">Accessories</h2>
-                                <a href="#" class="banner-assessories__link">SHOP NOW</a>
-                            </div>  
-                            <div class="banner-img">
-                                <img src="./assets/img/banner/banner-2.jpg" alt="clothing">
-                            </div>
-                        </div>
+        <!-- postcard banner -->
+        <section class="postcard-banner">
+            <div class="container">
+                <div class="postcard-info">
+                    <h1 class="postcard-title">GIVE THE GIFT OF A POSTCARD</h1>
+                    <p>Give the gift of a lasting memory with a postcard</p>
+                    <button type="button" class="btn postcard-btn">
+                        <a href="#">PURCHASE A POSTCARD</a>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-                        <!-- banner 3 -->
-                         <div class="banner-shoes">
-                            <div class="banner-shoes__title">
-                                <h2 class="banner-shoes__heading">Shoes Spring <br>2030</h2>
-                                <a href="#" class="banner-shoes__link">SHOP NOW</a>
-                            </div>
-                            <div class="banner-img">
-                                <img src="./assets/img/banner/banner-3.jpg" alt="clothing">
-                            </div>
-                            <div>
-
-
-                                
-                            </div>
-                         </div>
+        <!-- Feature -->
+        <section class="feature">
+            <div class="container">
+                <div class="row">
+                    <!-- item 1 -->
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
+                        </svg>
+                        <h3>Worldwide Shipping</h3>
+                        <p>It elit tellus, luctus nec ullamcorper <br> mattis, pulvinar dapibus leo.</p>
                     </div>
-             </section>
-        </main>
-    </body>
+
+                    <!-- item 2 -->
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                        </svg>
+
+                        <h3>Best Quality</h3>
+                        <p>It elit tellus, luctus nec ullamcorper <br> mattis, pulvinar dapibus leo.</p>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                        </svg>
+
+                        <h3>Best Offers</h3>
+                        <p>It elit tellus, luctus nec ullamcorper <br> mattis, pulvinar dapibus leo.</p>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                        </svg>
+
+                        <h3>Secure Payments
+                        </h3>
+                        <p>It elit tellus, luctus nec ullamcorper <br> mattis, pulvinar dapibus leo.</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- sales -->
+        <section class="sales">
+            <div class="container">
+                <a href="#">
+                    SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Pages</a>
+                    </li>
+                </ul>
+
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/logo.png" alt="" />
+                    </a>
+                </div>
+
+                <p>Copyright © 2025 Planet Earth Store</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
