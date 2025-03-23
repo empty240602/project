@@ -116,9 +116,71 @@ a {
     color: #111;
 }
 
+.nav-engines {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-engines svg {
+    color: var(--primary-color);
+}
+
 .nav-engines .nav-options a {
     display: inline-block;
     margin-left: 20px;
+}
+
+.nav-category {
+    display: none;
+}
+
+.navigation-popup {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navigation-popup--open {
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 140px 120px 0 35px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    transform: translateX(100%);
+}
+
+.navigation-popup--open .side-navigation {
+    transform: translateX(0);
+    transition: transform 0.3s;
+}
+
+.side-navigation a {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.navigation-popup--close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.navigation-popup--close svg {
+    width: 36px;
 }
 
 /* Hero */
@@ -129,6 +191,8 @@ a {
     height: 800px;
     background-image: url(../img/hero-1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-left {
@@ -166,6 +230,12 @@ a {
     letter-spacing: 4px;
 }
 
+.hero-btn:hover {
+    background-color: #e53637;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
 /* Banner */
 
 .banner {
@@ -191,6 +261,14 @@ a {
     align-items: flex-end;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.banner-item:nth-child(2) {
+    background-image: url(../img/banner/banner-2.jpg);
+}
+
+.banner-item:nth-child(3) {
+    background-image: url(../img/banner/banner-3.jpg);
 }
 
 .banner-content {

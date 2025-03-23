@@ -1,0 +1,52 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    
+}
+
+/* Tablet & mobile  */
+@media screen and (max-width: 991px) {
+    .header-top {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-engines .nav-options {
+        display: none;
+    }
+
+    .nav-engines .nav-category {
+        display: block;
+    }
+
+    .nav-category svg {
+        width: 36px;
+    }
+
+    /* banner */
+    .banner {
+        display: none;
+    }
+
+    /* product */
+    .product-list {
+        justify-content: center;
+    }
+
+    /* sales */
+    .sales {
+        display: none;
+    }   
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    
+}
