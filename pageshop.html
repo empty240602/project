@@ -5,10 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/pageshop.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="row">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#">BUY T-SHIRTS</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">WOMEN</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">MEN</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
 
+                <div class="nav-logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+
+                <div class="nav-tools">
+                    <div class="nav-tools__search">
+                        <form action="" class="search-bar">
+                            <input type="text" placeholder="Search anything" name="q">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="nav-tool__cart">
+                        <span class="nav-tool__cart-price">$0.00</span>
+                        <div class="nav-tool__cart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="nav-tools__user">
+                        <button type="button">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-heading">
+                <p>Home / Shop</p>
+                <h1>SHOP</h1>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop-filter">
+                    <div class="shop-filter__sort">
+                        <select name="sort" id="sort" class="select-box">
+                            <option value="0">Default sorting</option>
+                            <option value="1">Sort by popularity</option>
+                            <option value="2">Sort by average rating</option>
+                            <option value="3">Sort by latest</option>
+                            <option value="4">Sort by price: low to high</option>
+                            <option value="5">Sort by price: high to low</option>
+                        </select>
+
+                        <div class="shop-filter__gird">
+                            <div class="shop-filter__row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                                </svg>
+
+                            </div>
+                            <div class="shop-filter__column">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop-filter__show">
+                        <span>Show</span>
+                        <select name="show" id="show">
+                            <option value="8">8</option>
+                            <option value="12">12</option>
+                            <option value="All">All</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="shop-product">
+                    <div class="product-item">
+                        <a href="#">
+                            <img src="https://wordpressthemes.live/WCG3/WCM52_fabzy/default/wp-content/uploads/2023/11/15-600x801.jpg"
+                                alt="">
+                        </a>
+                        <div class='product-heading'>
+                            <p>
+                                Women Solid Polo Neck Cotton Blend White T-Shirt
+                            </p>
+                            <div>
+                                <span>Star</span>
+                            </div>
+                            <span>$300</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
 </body>
 
 </html>
