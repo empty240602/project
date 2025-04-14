@@ -2,7 +2,8 @@
     --text-color: #fff;
     --primary-color: #000;
     --secondary-color: #000099;
-    --third-color: #666
+    --third-color: #666;
+    --five-color: #878787;
 }
 
 * {
@@ -190,23 +191,104 @@ a {
     padding: 5px;
 }
 
-.product-item {
-    width: 275px;
+.shop-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
 }
 
-.product-item > a > img {
+.product-item {
+    width: 275px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.product-item a {
+    position: relative;
+    display: block;
     width: 100%;
+    padding-top: 125%; /* tạo khung hình đúng tỉ lệ */
+}
+
+.product-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.3s;
+}
+
+.product-item img:nth-child(1) {
+    z-index: 1;
+    opacity: 1;
+}
+
+.product-item img:nth-child(2) {
+    z-index: 2;
+    opacity: 0;
+}
+
+.product-item:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+.product-item:hover img:nth-child(1) {
+    opacity: 0;
+}
+
+.shop-product__icon {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 3; /* phải cao hơn ảnh */
+}
+
+.product-item:hover .shop-product__icon {
+    right: 10px;
+    opacity: 1;
+}
+
+.box-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.box-icon svg {
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.3s;
+    color: #444;
+}
+
+.box-icon:hover svg {
+    background-color: #976797;
+    color: #fff; /* nếu bạn muốn icon chuyển màu trắng */
 }
 
 .product-heading {
+    position: relative;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 8px;
     background-color: #ffff ;
     padding: 16px 30px;
     transform: translateY(0px);
     transition: all ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 .product-item:hover .product-heading  {
@@ -215,4 +297,9 @@ a {
 
 .product-heading p {
     text-align: center;
+    color: var(--five-color);
+}
+
+.product-heading svg {
+    width: 20px;
 }
