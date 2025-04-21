@@ -542,19 +542,19 @@ a {
     color: #222;
   }
   
-  .footer-container {
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
   }
   
-  .footer-column {
+.footer-column {
     flex: 1 1 220px;
     min-width: 220px;
   }
   
-  .footer-column h3 {
+.footer-column h3 {
     font-size: 18px;
     font-weight: 700;
     color: #2c2c2c;
@@ -562,30 +562,30 @@ a {
     text-transform: uppercase;
   }
   
-  .footer-column p,
-  .footer-column a {
+.footer-column p,
+.footer-column a {
     font-size: 14px;
     color: #333;
     line-height: 1.6;
     text-decoration: none;
   }
   
-  .footer-column a:hover {
+.footer-column a:hover {
     text-decoration: underline;
     color: #000;
   }
   
-  .footer-column ul {
+.footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  .footer-column ul li {
+.footer-column ul li {
     margin-bottom: 8px;
   }
   
-  .newsletter form {
+.newsletter form {
     display: flex;
     margin-top: 10px;
     background: #fff;
@@ -593,7 +593,7 @@ a {
     overflow: hidden;
   }
   
-  .newsletter input[type="email"] {
+.newsletter input[type="email"] {
     border: none;
     padding: 10px;
     flex: 1;
@@ -601,20 +601,20 @@ a {
     outline: none;
   }
   
-  .newsletter button {
+.newsletter button {
     background: none;
     border: none;
     padding: 0 10px;
     cursor: pointer;
   }
   
-  .social-icons {
+.social-icons {
     display: flex;
     gap: 15px;
     margin-top: 10px;
   }
   
-  .social-icons .icon {
+.social-icons .icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -624,7 +624,7 @@ a {
     transition: background 0.3s ease;
   }
   
-  .social-icons .icon:hover {
+.social-icons .icon:hover {
     background: #d4d4d4;
   }
 
