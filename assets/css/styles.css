@@ -580,8 +580,11 @@ a {
     color: var(--primary-color);
 }
 
-.sales a:hover {
-    color: #1F7D53;
+/* footer */
+.site-footer {
+    background-color: #e4e4e4;
+    padding: 50px 60px;
+    color: #222;
 }
 
 /* footer */
