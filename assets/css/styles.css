@@ -192,7 +192,6 @@ a {
 /* Hero */
 
 .hero {
-
     height: 100vh;
     background-image: url(../img/hero-1.jpg);
     background-repeat: no-repeat;
@@ -252,7 +251,6 @@ a {
 
 .banner {
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .banner-row {
@@ -375,6 +373,7 @@ a {
     display: block;
     width: 100%;
     padding-top: 125%;
+    /* tạo khung hình đúng tỉ lệ */
 }
 
 .product-item img {
@@ -415,6 +414,7 @@ a {
     opacity: 0;
     transition: all 0.4s ease-in-out;
     z-index: 3;
+    /* phải cao hơn ảnh */
 }
 
 .product-item:hover .shop-product__icon {
@@ -441,7 +441,7 @@ a {
 .box-icon:hover svg {
     background-color: #976797;
     color: #fff;
-
+    /* nếu bạn muốn icon chuyển màu trắng */
 }
 
 .product-heading {
@@ -460,224 +460,223 @@ a {
 }
 
 .product-item:hover .product-heading {
-    .product-item:hover .product-heading {
-        transform: translateY(-30px);
-    }
-
-    .product-heading p {
-        text-align: center;
-        color: var(--five-color);
-    }
-
-    .product-heading svg {
-        width: 20px;
-    }
-
-    /* testimonials-section */
-    .testimonials-section {
-        background-color: #f5f7f9;
-        padding: 80px 0;
-    }
-
-    .testimonials-heading h2 {
-        font-size: 42px;
-        font-weight: 700;
-        color: var(--primary-color);
-        margin-bottom: 30px;
-    }
-
-    .testimonials-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 100px;
-    }
-
-    .testimonials-item {
-        flex: 1;
-    }
-
-    .quote svg {
-        width: 40px;
-        margin-bottom: 20px;
-        color: #1F7D53;
-    }
-
-    .testimonials-item p {
-        font-size: 18px;
-        color: var(--primary-color);
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-
-    .testimonials-item .profile {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .testimonials-item .profile img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-
-    .testimonials-item .profile span {
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--primary-color);
-    }
-
-    /* postcard-banner */
-    .postcard-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-
-    .postcard-info img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    /* feature */
-    .feature {
-        padding: 100px 0;
-        background-color: #ebebeb;
-    }
-
-    .feature-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .feature-item svg {
-        width: 52px;
-    }
-
-    .feature-item h3 {
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--primary-color);
-    }
-
-    .feature-item p {
-        text-align: center;
-        color: var(--third-color);
-        line-height: 1.6;
-    }
-
-    .sales {
-        padding: 100px 0;
-    }
-
-    .sales a {
-        font-size: 26px;
-        font-weight: 700;
-        color: var(--primary-color);
-    }
-
-    .sales a:hover {
-        color: #1F7D53;
-    }
-
-    /* footer */
-    .site-footer {
-        background-color: #e4e4e4;
-        padding: 50px 60px;
-        font-family: 'Segoe UI', sans-serif;
-        color: #222;
-    }
-
-    .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    .footer-column {
-        flex: 1 1 220px;
-        min-width: 220px;
-    }
-
-    .footer-column h3 {
-        font-size: 18px;
-        font-weight: 700;
-        color: #2c2c2c;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-    .footer-column p,
-    .footer-column a {
-        font-size: 14px;
-        color: #333;
-        line-height: 1.6;
-        text-decoration: none;
-    }
-
-    .footer-column a:hover {
-        text-decoration: underline;
-        color: #000;
-    }
-
-    .footer-column ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-column ul li {
-        margin-bottom: 8px;
-    }
-
-    .newsletter form {
-        display: flex;
-        margin-top: 10px;
-        background: #fff;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-
-    .newsletter input[type="email"] {
-        border: none;
-        padding: 10px;
-        flex: 1;
-        font-size: 14px;
-        outline: none;
-    }
-
-    .newsletter button {
-        background: none;
-        border: none;
-        padding: 0 10px;
-        cursor: pointer;
-    }
-
-    .social-icons {
-        display: flex;
-        gap: 15px;
-        margin-top: 10px;
-    }
-
-    .social-icons .icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 34px;
-        height: 34px;
-        border-radius: 6px;
-        transition: background 0.3s ease;
-    }
-
-    .social-icons .icon:hover {
-        background: #d4d4d4;
-    }
+    transform: translateY(-30px);
 }
+
+.product-heading p {
+    text-align: center;
+    color: var(--five-color);
+}
+
+.product-heading svg {
+    width: 20px;
+}
+
+/* testimonials-section */
+.testimonials-section {
+    background-color: #f5f7f9;
+    padding: 80px 0;
+}
+
+.testimonials-heading h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.testimonials-item {
+    flex: 1;
+}
+
+.quote svg {
+    width: 40px;
+    margin-bottom: 20px;
+    color: #1F7D53;
+}
+
+.testimonials-item p {
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonials-item .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonials-item .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonials-item .profile span {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* postcard-banner */
+.postcard-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postcard-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+
+/* feature */
+.feature {
+    padding: 100px 0;
+    background-color: #f5f7f9;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item svg {
+    width: 52px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.feature-item p {
+    text-align: center;
+    color: var(--third-color);
+    line-height: 1.6;
+}
+
+.sales {
+    padding: 100px 0;
+}
+
+.sales a {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.sales a:hover {
+    color: #1F7D53;
+}
+
+/* footer */
+.site-footer {
+    background-color: #f5f7f9;
+    padding: 50px 60px;
+    color: #222;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.newsletter form {
+    display: flex;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.newsletter input[type="email"] {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter button {
+    background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    background: #d4d4d4;
+}
+
 
 .footer-container {
     display: flex;
