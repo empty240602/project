@@ -45,6 +45,7 @@ a {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
+
 /* Header */
 .header {
     background-color: #fff;
@@ -105,6 +106,7 @@ a {
 .navigation {
     margin: 30px 0;
 }
+
 .nav-list {
     display: flex;
     align-items: center;
@@ -188,7 +190,7 @@ a {
 .hero {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-image: url(../img/hero-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,7 +249,7 @@ a {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px   ;
+    gap: 30px;
 }
 
 .banner-item {
@@ -285,7 +287,7 @@ a {
 .banner-content h2 {
     font-size: 22px;
     margin-bottom: 10px;
-    font-weight: 700    ;
+    font-weight: 700;
 }
 
 .banner-content p {
@@ -301,22 +303,23 @@ a {
     border-bottom: 3px solid #ebebeb;
 }
 
-.product-heading {
+.product-top {
     width: 100%;
     text-align: center;
     margin-top: 50px;
 }
 
-.product-heading p {
+.product-top p {
     font-size: 14px;
     color: var(--primary-color);
 }
 
-.product-heading h2 {
+.product-top h2 {
     font-size: 36px;
     font-weight: 700;
     margin: 15px 0 20px 0;
 }
+
 
 .product-list {
     display: flex;
@@ -324,68 +327,118 @@ a {
     gap: 20px;
 }
 
-.product {
-    width: 285px;
-    padding: 10px;
+.shop-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
 }
 
-.product img {
+.product-item {
+    width: 275px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.product-item a {
+    position: relative;
+    display: block;
     width: 100%;
+    padding-top: 125%;
 }
 
-.product-info {
-    margin: 15px 0 0 15px;
+.product-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.3s;
 }
 
-.product-info span {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--secondary-color);
+.product-item img:nth-child(1) {
+    z-index: 1;
+    opacity: 1;
 }
 
-.product-info h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 10px 0;
+.product-item img:nth-child(2) {
+    z-index: 2;
+    opacity: 0;
 }
 
-.product-info p {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+.product-item:hover img:nth-child(2) {
+    opacity: 1;
 }
 
-.product-color-size {
+.product-item:hover img:nth-child(1) {
+    opacity: 0;
+}
+
+.shop-product__icon {
+    position: absolute;
+    top: 10px;
+    right: -50px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 3;
 }
 
-.color {
-    display: flex;
-    gap: 15px;
+.product-item:hover .shop-product__icon {
+    right: 10px;
+    opacity: 1;
 }
 
-.color-box {
-    width: 20px;
-    height: 20px;
+.box-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.box-icon svg {
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+    color: #444;
+}
+
+.box-icon:hover svg {
+    background-color: #976797;
+    color: #fff;
+}
+
+.product-heading {
+    position: relative;
+    z-index: 3;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #ffff;
+    padding: 16px 30px;
+    transform: translateY(0px);
+    transition: all ease-in-out 0.3s;
     cursor: pointer;
 }
 
-.color-box.black { 
-    background-color: black; 
+
+.product-item:hover .product-heading {
+    transform: translateY(-30px);
 }
-.color-box.pink { 
-    background-color: pink; 
+
+.product-heading p {
+    text-align: center;
+    color: var(--five-color);
 }
-.color-box.white { 
-    background-color: white; border: 1px solid #ccc; 
+
+.product-heading svg {
+    width: 20px;
 }
 
 /* testimonials-section */
@@ -411,11 +464,12 @@ a {
     flex: 1;
 }
 
-.quote svg{
+.quote svg {
     width: 40px;
     margin-bottom: 20px;
     color: #1F7D53;
 }
+
 .testimonials-item p {
     font-size: 18px;
     color: var(--primary-color);
@@ -536,84 +590,85 @@ a {
 
 /* footer */
 .site-footer {
-    background-color: #e4e4e4; /* Màu nền nhẹ hơn #c1c1c1 */
+    background-color: #e4e4e4;
+    /* Màu nền nhẹ hơn #c1c1c1 */
     padding: 50px 60px;
     font-family: 'Segoe UI', sans-serif;
     color: #222;
-  }
-  
+}
+
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-  }
-  
+}
+
 .footer-column {
     flex: 1 1 220px;
     min-width: 220px;
-  }
-  
+}
+
 .footer-column h3 {
     font-size: 18px;
     font-weight: 700;
     color: #2c2c2c;
     margin-bottom: 15px;
     text-transform: uppercase;
-  }
-  
+}
+
 .footer-column p,
 .footer-column a {
     font-size: 14px;
     color: #333;
     line-height: 1.6;
     text-decoration: none;
-  }
-  
+}
+
 .footer-column a:hover {
     text-decoration: underline;
     color: #000;
-  }
-  
+}
+
 .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
+}
+
 .footer-column ul li {
     margin-bottom: 8px;
-  }
-  
+}
+
 .newsletter form {
     display: flex;
     margin-top: 10px;
     background: #fff;
     border-radius: 4px;
     overflow: hidden;
-  }
-  
+}
+
 .newsletter input[type="email"] {
     border: none;
     padding: 10px;
     flex: 1;
     font-size: 14px;
     outline: none;
-  }
-  
+}
+
 .newsletter button {
     background: none;
     border: none;
     padding: 0 10px;
     cursor: pointer;
-  }
-  
+}
+
 .social-icons {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-  }
-  
+}
+
 .social-icons .icon {
     display: inline-flex;
     align-items: center;
@@ -622,10 +677,8 @@ a {
     height: 34px;
     border-radius: 6px;
     transition: background 0.3s ease;
-  }
-  
+}
+
 .social-icons .icon:hover {
     background: #d4d4d4;
-  }
-
-
+}
