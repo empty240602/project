@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>`
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Detail</title>
+    <link rel="stylesheet" href='./assets/css/cartDetail.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/logo.png" alt="" />
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                        <path fill-rule="evenodd"
+                            d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <input type="text" placeholder="Search" class="box-input" />
+                </div>
+                <div class="nav-right__bar">
+                    <div class="nav-right__cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path
+                                d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                        </svg>
+
+                        <span>Cart</span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="nav-right__user">
+                        <div class="box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 0 0 1.28.53l4.184-4.183a.39.39 0 0 1 .266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0 0 12 2.25ZM8.25 8.625a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm2.625 1.125a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                            <span class="dot"></span>
+                        </div>
+                        <div class="box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path
+                                    d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.719 9.719 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.219 8.219 0 0 1 5.85 3.5ZM19.267 2.5a.75.75 0 1 0-1.118 1 8.22 8.22 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248A9.72 9.72 0 0 0 19.266 2.5Z" />
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25A6.75 6.75 0 0 0 5.25 9v.75a8.217 8.217 0 0 1-2.119 5.52.75.75 0 0 0 .298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 1 0 7.48 0 24.583 24.583 0 0 0 4.83-1.244.75.75 0 0 0 .298-1.205 8.217 8.217 0 0 1-2.118-5.52V9A6.75 6.75 0 0 0 12 2.25ZM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 0 0 4.496 0l.002.1a2.25 2.25 0 1 1-4.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                            <span class="dot"></span>
+                        </div>
+                        <img class="avatar" src="https://i.pravatar.cc/40?img=3" alt="User Avatar" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading-sale">
+            <p>We always send discount coupons to your email everyday. Please always checks your email
+                <a href="#">Check now!</a>
+            </p>
+        </div>
+
+        <section class="product-detail">
+            <div class="product-container">
+                <div class="product-heading">
+                    <p>New Arrival</p>
+                    <span>></span>
+                    <span>Women</span>
+                    <span>></span>
+                    <p>New Relaxed Fit Sweatshirt Vol. III</p>
+                </div>
+
+                <div class="product-detail__item">
+                    <div class="product-detail__describe">
+                        <div class="product-gallery">
+                            <div class="main-image">
+                                <img id="mainProductImage" src="./assets/img/products/product-1.jpg" alt="Main product">
+                            </div>
+
+                            <div class="thumbnail-list">
+                                <img class="thumbnail selected" src="./assets/img/products/product-1.jpg"
+                                    alt="Thumbnail">
+                                <img class="thumbnail" src="./assets/img/products/product-2.jpg" alt="Thumbnail">
+                                <img class="thumbnail" src="./assets/img/products/product-3.jpg" alt="Thumbnail">
+                                <img class="thumbnail" src="./assets/img/products/product-4.jpg" alt="Thumbnail">
+                            </div>
+
+                            <div class="store-box">
+                                <div class="store-header">
+                                    <div class="store-name">
+                                        <i class="icon-store"></i>
+                                        <span>Stylish</span>
+                                        <i class="icon-verified"></i>
+                                    </div>
+                                    <div class="store-rating">
+                                        <i class="icon-star"></i>
+                                        <span>(4.8)</span>
+                                        <span class="reviews">17.5k reviews</span>
+                                    </div>
+                                </div>
+
+                                <div class="store-footer">
+                                    <div class="store-location">
+                                        <i class="icon-location"></i>
+                                        <span>New York, USA</span>
+                                    </div>
+                                    <button class="visit-store">Visit Store</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+                            <div class="badge">NEW ARRIVAL</div>
+                            <h1 class="title">New Relaxed Fit<br>Sweatshirt Vol. III</h1>
+
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">(4.5)</span>
+                                <span class="reviews">623 reviews</span>
+                                <span class="sold">1,919 Sold</span>
+                            </div>
+
+                            <div class="price">$ 899,00</div>
+
+                            <div class="option-group">
+                                <p class="label">SELECT COLOR</p>
+                                <div class="options color">
+                                    <button>Black</button>
+                                    <button class="active">Cream</button>
+                                    <button>Green</button>
+                                    <button>Blue</button>
+                                    <button>Red</button>
+                                </div>
+                            </div>
+
+                            <div class="option-group">
+                                <p class="label">SELECT SIZE <span class="stock-warning">❗Only 5 Stocks Left!</span></p>
+                                <div class="options size">
+                                    <button>XS</button>
+                                    <button class="active">S</button>
+                                    <button>M</button>
+                                    <button>L</button>
+                                    <button>XL</button>
+                                    <button>XXL</button>
+                                    <button>XXXL</button>
+                                </div>
+                            </div>
+
+                            <div class="description-section">
+                                <p class="label">DESCRIPTION</p>
+                                <p class="desc">
+                                    Top in sweatshirt fabric made from a cotton blend with a soft brushed inside.
+                                    Relaxed fit with dropped shoulders, long sleeves and ribbing around the neckline,
+                                    cuffs
+                                    and
+                                    hem.
+                                    Small metal text appliqu… <a href="#">Read more</a>
+                                </p>
+                            </div>
+
+                            <div class="details-section">
+                                <p class="label">DETAILS</p>
+                                <p>📍 Sent from <strong>New York, USA.</strong></p>
+                                <p>🚚 Estimated Shipping <strong>$3,99</strong> <a href="#">Shipping details ⌄</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="product-detail__method">
+                <div class="product-method__item">
+                    <h2>Order Details</h2>
+                    <div class="section">
+                        <label>Quantity</label>
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+
+                        <div class="info">
+                            <p><span>Color</span>Brown</p>
+                            <p><span>Size</span>S</p>
+                            <p><span>Price</span>$1,798.00</p>
+                            <p><span>Discount size</span>10% ($179.8)</p>
+                            <div class="info-options">
+                                <div>
+                                    <span>Delivery: </span>
+                                    <select class="info-select">
+                                        <option>REGULAR</option>
+                                        <option>FAST</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>$3.99</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <label>Notes</label>
+                        <textarea placeholder="Write a notes..."></textarea>
+
+                        <button class="coupon">
+                            APPLY COUPON <span class="icon">🎟️</span>
+                        </button>
+
+                        <div class="subtotal">
+                            <span>Sub Total</span>
+                            <strong>$1,622.19</strong>
+                        </div>
+
+                        <button class="buy-now">Buy Now</button>
+                        <button class="add-cart">🛒 Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+</body>
+
+</html>
