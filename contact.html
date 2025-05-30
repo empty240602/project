@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/aboutUs.css" />
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+    </head>
 </head>
 
 <body>
@@ -51,13 +55,13 @@
             <div class="container">
                 <div class="row">
                     <div class="nav-logo">
-                        <a href="#">
+                        <a href="./index.html">
                             <img src="./assets/img/logo.png" alt="" />
                         </a>
                     </div>
                     <ul class="nav-list">
                         <li class="nav-list__item">
-                            <a href="#">Home</a>
+                            <a href="./homepage.html">Home</a>
                         </li>
                         <li class="nav-list__item">
                             <a href="./pageshop.html">Shop</a>
@@ -108,7 +112,6 @@
     </header>
 
     <main>
-        <!-- hero -->
         <section class="hero">
             <div class="container">
                 <div class="row">
@@ -132,190 +135,64 @@
             </div>
         </section>
 
-        <!-- About Store -->
-        <section class="about-store">
+        <section class="contact-form">
             <div class="container">
-                <div class="about-store__content">
-                    <h2>About our store</h2>
-                    <div class="about-store__description">
-                        <div class="about-store__description-left">
-                            <p>
-                                At et vehicula sodales est proin turpis pellentesque sinulla a aliquam amet rhoncus
-                                quisque
-                                eget
-                                sit.
-                                Sociis blandit et pellentesque aliquet at quisque tortor lacinia nullam. Mattis aenean
-                                scelerisque dui libero
-                                cras arcu in egestas sagittis.
-                            </p>
-                            <div class="about-store__title">
-                                <div>
-                                    <p class="stat-number">2k+</p>
-                                    <span class="stat-label">
-                                        Happy Clients
-                                    </span>
+                <div class="contact-box__container">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" placeholder="First name" />
                                 </div>
-
-                                <div>
-                                    <p class="stat-number">72</p>
-                                    <span class="stat-label">Brands</span>
+                                <div class="input-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" placeholder="Last name" />
                                 </div>
                             </div>
-
-
-                        </div>
-                        <div class="about-store__description-right">
-                            <p>
-                                Aliquet ultrices risus dolor gravida. Faucibus sodales semper a magnis sapien viverra
-                                purus
-                                sed
-                                tortor.
-                                Amet risus blandit nunc odio rutrum. Adipiscing tincidunt imperdiet at cursus ipsum
-                                vulputate
-                                pharetra.
-                                Tellus nulla commodo ut ut auctor orci blandit at elit...
-                            </p>
-
-                            <div class="about-store__title">
-                                <div>
-                                    <p class="stat-number">1.8k+</p>
-                                    <span class="stat-label">
-                                        Products
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <p class="stat-number">28</p>
-                                    <span class="stat-label">Years in business</span>
-                                </div>
+                            <div class="input-group full">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="E-mail address" />
                             </div>
-                        </div>
+                            <div class="input-group full">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Your message..."></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Feel free to contact us</h2>
+                        <p>At et vehicula sodales est proin turpis pellentesque sinulla a aliquam amet rhoncus quisque
+                            eget
+                            sit. Sociis blandit et pellentesque aliquet at quisque tortor lacinia nullam</p>
+                        <ul>
+                            <li>
+                                <span class="icon">📍</span> 8592 Fairground St. Tallahassee, FL 32303
+                            </li>
+
+                            <li>
+                                <span class="icon">✉️</span> rgarton@outlook.com
+                            </li>
+
+                            <li>
+                                <span class="icon">📞</span> +775 378-6348
+                            </li>
+
+                            <li>
+                                <span class="icon">⏰</span> Mon – Fri: 10AM – 10PM
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="founder-section">
+        <section class="contact-map">
             <div class="container">
-                <div class="founder-box">
-                    <div class="founder-image">
-                        <img src="./assets/img/aboutUs/about-1.png" alt="Taylor Joshua">
-                    </div>
-                    <div class="founder-info">
-                        <h2>Taylor Joshua</h2>
-                        <p class="founder-role">Founder</p>
-                        <p class="founder-desc">
-                            <em>
-                                Nisl nunc vitae integer ridiculus ultrices quam a scelerisque est. Sollicitudin volutpat
-                                blandit
-                                maecenas ornare dictum tempor. Amet sem non rutrum et duis. Id nisi ac vitae enim neque
-                                sapien.
-                            </em>
-                        </p>
-                        <p class="founder-desc">
-                            <em>
-                                Eu arcu consectetur etiam bibendum fermentum sed lobortis fringilla imperdiet. Aliquet
-                                ultrices
-                                risus dolor gravida. Faucibus sodales semper a magnis sapien viverra purus sed tortor.
-                                Amet
-                                risus
-                                blandit nunc odio rutrum...
-                            </em>
-                        </p>
-                        <div class="founder-signature">
-                            <img src="./assets/img/aboutUs/about-signature.png" alt="Signature of Taylor Joshua">
-                        </div>
-                    </div>
-                </div>
+                <img src="./assets/img/aboutUs/map.png" alt="map">
             </div>
         </section>
-
-        <section class="about-team">
-            <div class="container">
-                <h1>OUR TEAM</h1>
-                <div class="about-list__team">
-                    <div class="about-team__member">
-                        <img src="./assets/img/aboutUs/about-team-1.png" alt="">
-                        <p>Caroline Washington</p>
-                        <span>Seller</span>
-                    </div>
-
-                    <div class="about-team__member">
-                        <img src="./assets/img/aboutUs/about-team-2.png" alt="">
-                        <p>Gerald Ferguson</p>
-                        <span>Seller</span>
-                    </div>
-
-                    <div class="about-team__member">
-                        <img src="./assets/img/aboutUs/about-team-3.png" alt="">
-                        <p>Averi Maddox</p>
-                        <span>Seller</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="feedback">
-            <div class="container">
-                <div class="feedback-content">
-                    <div class="feedback-description">
-                        <h>Testimonials</h>
-                        <h3>What people say about us</h3>
-                        <div class="about-stars">
-                            <img src="./assets/img/aboutUs/Star.png" alt="star">
-                            <img src="./assets/img/aboutUs/Star.png" alt="star">
-                            <img src="./assets/img/aboutUs/Star.png" alt="star">
-                            <img src="./assets/img/aboutUs/Star.png" alt="star">
-                            <img src="./assets/img/aboutUs/Star.png" alt="star">
-                        </div>
-                        <p>
-                            Morbi viverra eleifend in cras orci a leo tellus. Nunc purus adipiscing diam aliquet lorem
-                            nunc.Ipsum euismod risus amet eget non. Pulvinar condimentum ultricies tellus a non
-                            pellentesque
-                            odiopellentesque blandit. Aliquet et massa eget
-                        </p>
-                        <p class="about-customer__name">Gerald Ferguson</p>
-                        <span class="about-customer">Customer</span>
-                    </div>
-
-                    <div class="about-image">
-                        <img src="./assets/img/aboutUs/customer-name.png" alt="customer-name">
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="about-video">
-            <div class="container">
-                <img src="./assets/img/aboutUs/video.png" alt="video">
-            </div>
-        </section>
-
-        <section class="about-social">
-            <div class="container">
-                <h1>Follow our Instagram</h1>
-
-                <div class="about-social__item">
-                    <div class="about-social__item-border">
-                        <img src="./assets/img/aboutUs/social-1.png" alt="person1">
-                    </div>
-                    <div class="about-social__item-border">
-                        <img src="./assets/img/aboutUs/social-2.png" alt="person2">
-                    </div>
-                    <div class="about-social__item-border">
-                        <img src="./assets/img/aboutUs/social-3.png" alt="person3">
-                    </div>
-                    <div class="about-social__item-border">
-                        <img src="./assets/img/aboutUs/social-4.png" alt="person4">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
     </main>
 
     <footer class="site-footer">
