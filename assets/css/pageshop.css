@@ -347,6 +347,13 @@
     background-color: #0056b3;
 }
 
+.product-item__name {
+    margin: 16px 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
 .product-price {
     font-size: 24px;
     font-weight: 700;
@@ -354,6 +361,13 @@
     align-items: center;
     gap: 10px;
     margin-top: 15px;
+}
+
+.product-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
 }
 
 .product-price .product-price__original {
